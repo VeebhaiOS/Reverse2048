@@ -14,6 +14,13 @@
 		7516575A22AA8FDA00843FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7516575822AA8FDA00843FDC /* LaunchScreen.storyboard */; };
 		7516576522AA8FDB00843FDC /* Reverse2048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516576422AA8FDB00843FDC /* Reverse2048Tests.swift */; };
 		7516577022AA8FDB00843FDC /* Reverse2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516576F22AA8FDB00843FDC /* Reverse2048UITests.swift */; };
+		7516577F22AA904400843FDC /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516577E22AA904400843FDC /* GameModel.swift */; };
+		7516578122AA909500843FDC /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516578022AA909500843FDC /* AuxiliaryModels.swift */; };
+		7516578422AA90D500843FDC /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516578322AA90D500843FDC /* AccessoryViews.swift */; };
+		7516578622AA90FD00843FDC /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516578522AA90FD00843FDC /* GameboardView.swift */; };
+		7516578822AA912500843FDC /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516578722AA912500843FDC /* TileView.swift */; };
+		7516578A22AA915B00843FDC /* NumberTileGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516578922AA915B00843FDC /* NumberTileGame.swift */; };
+		7516578C22AA917500843FDC /* AppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7516578B22AA917500843FDC /* AppearanceProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		7516576B22AA8FDB00843FDC /* Reverse2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reverse2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7516576F22AA8FDB00843FDC /* Reverse2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reverse2048UITests.swift; sourceTree = "<group>"; };
 		7516577122AA8FDB00843FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7516577E22AA904400843FDC /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		7516578022AA909500843FDC /* AuxiliaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryModels.swift; sourceTree = "<group>"; };
+		7516578322AA90D500843FDC /* AccessoryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryViews.swift; sourceTree = "<group>"; };
+		7516578522AA90FD00843FDC /* GameboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardView.swift; sourceTree = "<group>"; };
+		7516578722AA912500843FDC /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		7516578922AA915B00843FDC /* NumberTileGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTileGame.swift; sourceTree = "<group>"; };
+		7516578B22AA917500843FDC /* AppearanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,16 @@
 		7516574E22AA8FBC00843FDC /* Reverse2048 */ = {
 			isa = PBXGroup;
 			children = (
+				7516578222AA90B700843FDC /* Views */,
+				7516577D22AA900200843FDC /* Models */,
 				7516574F22AA8FBD00843FDC /* AppDelegate.swift */,
 				7516575122AA8FBD00843FDC /* ViewController.swift */,
 				7516575322AA8FBD00843FDC /* Main.storyboard */,
 				7516575622AA8FDA00843FDC /* Assets.xcassets */,
 				7516575822AA8FDA00843FDC /* LaunchScreen.storyboard */,
 				7516575B22AA8FDB00843FDC /* Info.plist */,
+				7516578922AA915B00843FDC /* NumberTileGame.swift */,
+				7516578B22AA917500843FDC /* AppearanceProvider.swift */,
 			);
 			path = Reverse2048;
 			sourceTree = "<group>";
@@ -123,6 +141,25 @@
 				7516577122AA8FDB00843FDC /* Info.plist */,
 			);
 			path = Reverse2048UITests;
+			sourceTree = "<group>";
+		};
+		7516577D22AA900200843FDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7516577E22AA904400843FDC /* GameModel.swift */,
+				7516578022AA909500843FDC /* AuxiliaryModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7516578222AA90B700843FDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7516578322AA90D500843FDC /* AccessoryViews.swift */,
+				7516578522AA90FD00843FDC /* GameboardView.swift */,
+				7516578722AA912500843FDC /* TileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7516578A22AA915B00843FDC /* NumberTileGame.swift in Sources */,
+				7516578122AA909500843FDC /* AuxiliaryModels.swift in Sources */,
+				7516578822AA912500843FDC /* TileView.swift in Sources */,
 				7516575222AA8FBD00843FDC /* ViewController.swift in Sources */,
+				7516578422AA90D500843FDC /* AccessoryViews.swift in Sources */,
+				7516578C22AA917500843FDC /* AppearanceProvider.swift in Sources */,
+				7516578622AA90FD00843FDC /* GameboardView.swift in Sources */,
 				7516575022AA8FBD00843FDC /* AppDelegate.swift in Sources */,
+				7516577F22AA904400843FDC /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7H5QFDGU4;
 				INFOPLIST_FILE = Reverse2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7H5QFDGU4;
 				INFOPLIST_FILE = Reverse2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

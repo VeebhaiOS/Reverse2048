@@ -14,7 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    @IBAction func startGameButtonTapped(_ sender : UIButton) {
+        let game = NumberTileGameViewController(dimension: 4, threshold: 2)
+        self.present(game, animated: true, completion: nil)
+    }
 
 }
 
